@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font for the titles--> <!--Font for the content-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cardo:wght@400;700&family=Sigmar&display=swap" rel="stylesheet">
+  
+   <title>Breakfast Recipes</title>
+
+   <!--Font Awesome Link-->
+
+<script src="https://kit.fontawesome.com/c9318579c4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<div class="header">
+    <img class="banner" src=".\Images\arepas-avocado-frame-flat-lay-1.jpg">
+    <div class="text-overlay-banner-breakfast">
+        <h1 id="mainTitleBreakfast">Breakfast</h1>
+        <p>Recipes</p>
+
+    </div>
+
+    <nav id="navBar">
+        <!--Navigation menu items-->
+        <ul>
+            <li><button class="buttonNavBar"><a href="index.html#header" target="_blank">Home</a></button></li> 
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" id="buttonNavBar">Recipes</button>
+                <div id="myDropdown" class="dropdown-content">
+                   <!-- <a href="#recipes">All the recipes</a> -->
+                   <a href="#arepas">Arepas</a>
+                   <a href="#pandebonos">Pandebonos</a>
+                   <a href="#scrambleEggs">Scramble Eggs</a>
+                  
+                </div>
+              </div>
+
+       
+        <li><button class="buttonNavBar" onclick="showCart()">Cart list<span id="cart-counter">()</span></button></li> 
+         
+        <!--<li><button onclick="hideCart()">Close</button></li>-->
+        </ul>
+     </nav>
+        
+        
+</div> 
+
+ <!-- <p>Recipes</p> -->
+
+<body>
+
+    <!--Breakfast Recipes-->
+
+    <article id="arepas">
+        <img src=".\Images\240_F_535329145_HiXjEycX0SqKCzXhhAfOIw00hFVxw015.jpg">
+    
+     <div>
+        <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i> 30 min <i class="fa-solid fa-utensils" style="color: #2da7a9;"></i> 4 servings<button type="submit" onclick="addToShoppingList(1)" class="button-recipe-arepas">Add me</button></p> 
+    </div>
+
+    <ul id="ingredientListArepas"></ul>
+
+    <ol class="process">
+        <h2 id="processTitle">The Process</h2>
+    
+    <li>Mix all of the ingredients in a large bowl and knead until the dough is soft and smooth. If you notice that it is a bit dry, you can add more water. And if you see that it is still too wet, you can add more corn meal.</li>
+    <li>Shape the arepas anyway you want. They can be thin, thick, small, large, round whatever shape you like best. This step is not rocket science.</li>
+    <li>Grill the arepas on a hot grill or on a buttered griddle or pan, the choice is yours. The key is to make grill them at a medium-high temperature to give them a golden brown crust. Remember that the corn meal is already pre-cooked and you are not grilling them to “cook” them, but to give them a golden brown color.</li>
+    
+    </ol>  
+
+
+    </article>
+
+    <!-- Pandebono Recipe -->
+
+    <article id="pandebonos">
+        <img src=".\Images\PANDEBONOS.jpg">
+
+        <div id="pandebonosButton">
+            <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  45 min  <i class="fa-solid fa-utensils" style="color: #2da7a9;"></i> 10 servings<button onclick="addToShoppingList(2)" class="button-recipe-arepas">Add me</button></p>
+        </div>
+
+       <ul id="ingredientListPandebonos"></ul>
+
+    <ol class="process">
+        <h2 id="processTitle">The Process</h2>
+
+    <li>Pre-heat oven to 475ºF (246ºC).</li>
+    <li>Mix the cassava starch, cornstarch, baking powder, salt and white sugar in a large bowl.</li>
+    <li>Add the mozzarella cheese, butter and egg and start mixing with your hands. If you notice that the dough is too dry, you can slowly add milk as needed until you get a soft, smooth dough.</li>
+    <li>Form small balls (about 1½ inches or 4 cm in diameter) with the dough and place them about 2 inches (5 cm) apart on a baking sheet covered with parchment paper or a silicone mat. Bake the pandebonos for about 10-12 minutes or until golden brown.</li>
+
+    </ol>
+
+
+    </article>
+
+    <!-- Scramble Eggs Recipe -->
+
+    <article id="scrambleEggs">
+
+    <img src=".\Images\huevosPericos.jpg">
+
+    <div id="scrambleEggsButton">
+        <p ><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  25 min  <i class="fa-solid fa-utensils" style="color: #2da7a9;"></i> 4 servings <button onclick="addToShoppingList(3)" class="button-recipe-arepas">Add me</button></p>
+    </div>
+
+    <ul id="ingredientListScrambleEggs"></ul>
+
+    <ol class="process">
+        <h2 id="processTitle">The Process</h2>
+
+    <li>In a medium non-stick skillet heat the oil over medium heat. Add the tomatoes and scallions and cook about 5 minutes, stirring occasionally.</li>
+    <li>Meanwhile, in a small bowl beat the eggs and salt. Pour the eggs in the skillet with the tomato mixture and cook over medium heat, without stirring, until mixture begins to set.</li>
+    <li>Stir twice or until the eggs mix with the tomato and scallions and cook about 2 minutes or until the eggs are the consistency you like.</li>
+    <li>Transfer to a serving plate and serve with arepa or toast.</li>
+    </ol>
+
+    </article>
+
+<main class="noShow">
+    <div class="headerLunch">
+        <img class="bannerLunch" src=".\Images\delicious-food-frame-top-view-3.jpg">
+        <div class="text-overlay-banner-Lunch">
+            <h1 id="mainTitleLunch">Lunch</h1>
+            <p>Recipes</p>
+    
+        </div>
+
+        
+    <article id="redBeans">
+        <img src=".\Images\240_F_244872713_o6NxGHL6Cx4PLkCJEBF9bTEasDZdpATT.jpg">
+        
+    <div>
+        <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  30 min <button onclick="addToShoppingList(4)" class="button-recipe-arepas">Add me</button></p>
+    </div>
+
+    <ul id="ingredientListRedBeans"></ul>
+
+    <ol>
+        <h2 id="processTitle">The Process</h2>
+    
+    <li>Wash and soak beans the night before in about 5 cups of water.</li>
+    <li>Heat 2 tbsp of oil on medium high heat in a big pot or pressure cooker, then add ham hocks and brown for about 5 minutes.</li>
+    <li>Add bay leaf and garlic and stir for about 1 minute. Add beans with 8-10 cups of water, the plantain, the carrot and the aliños. Then add the rest of the water making sure the beans are covered. Add more water if needed.</li>
+    <li> If you’re using a pressure cooker, add 1 tbsp of oil to prevent the water from foaming. If you’re using a regular pot, you don’t need to add more oil.</li>
+    <li>Cover pressure cooker and bring to pressure, then lower heat to medium low and cook for 25 minutes. Cook for 1½ – 2 hours on medium low if using a regular pot.</li>
+    <li>Remove from heat and let rest for 5 minutes before releasing the steam.</li>
+    <li> Once all the pressure is released, uncover and remove ham hocks and let cool. Remove bay leaf and discard.</li>
+    <li>Remove carrot and put it in a blender with about one cup of beans and liquid from the pot and blend until smooth. Then add it back to the beans. This will help thicken the liquid and it will add the carrot flavor.</li>
+    <li>Once the ham hocks have cooled, remove the meat and add it back to the beans. Discard the bones.</li>
+    <li>Taste for seasoning and add salt and pepper to taste. Serve with a side of white rice and avocado.</li>
+    
+    </ol>  
+
+    </article>
+
+    <article id="henSoup">
+        <img src=".\Images\broth-soup-with-carrot-potato-minced-greenery.jpg">
+        
+    <div id="henSoupButton"> 
+        <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  30 min  <button onclick="addToShoppingList(5)" class="button-recipe-arepas">Add me</button></p>
+    </div>
+
+    <ul id="ingredientListHenSoup"></ul>
+
+    <ol>
+        <h2 id="processTitle">The Process</h2>
+    
+    <li>In a large pot, place the chicken, corn, aliños, chicken bouillon, salt and green plantain. Add the water and bring to a boil, then cover and reduce heat to medium and cook for about 30 to 35 minutes.</li>
+    <li>Add the potatoes, yuca and pepper and continue cooking for 30 more minutes or until the yuca and potatoes are fork tender. Stir in the cilantro.</li>
+    <li>Taste and adjust the seasoning. Serve in large soup bowls, dividing the chicken and vegetables evenly. Sancocho de Gallina o Pollo</li>
+
+    
+    </ol>  
+
+    </article>
+
+    <article id="shrimpCeviche">
+        <img src=".\Images\ceviche-de-camaron-4.jpg">
+        
+<div>
+        <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  30 min  <button onclick="addToShoppingList(6)" class="button-recipe-arepas">Add me</button></p>
+    </div>
+        <ul id="ingredientListColombianShrimpCeviche"></ul>
+
+    <ol>
+        <h2 id="processTitle">The Process</h2>
+    
+    <li>In a medium pot, bring 4 cups of water to boil, turn off the heat, drop in the shrimp and cover. Leave the shrimp in the hot water for 1 minute. Drain off the water and place the shrimp in a plastic bowl.</li>
+    <li>Add the ketchup, lime juice, onion, cilantro, parsley, Tabasco sauce, olive oil, garlic, salt and pepper to taste. Stir to combine all ingredients. Refrigerate and serve cold over lettuce leaves with saltine crackers.</li>
+    
+    </ol>  
+
+    </article>
+</main>
+
+    <div id="my-cart">
+        <button class="buttonMyCart" onclick="hideCart()">Close</button>
+        <button class="buttonMyCart" onclick="cleanCartList()">Clean list</button>
+        <!-- <button class="buttonMyCart" onclick="downloadShoppingList()">Download</button> -->
+        <div id="shoppingList" class="shoppingList">List of ingredients:</div>
+     </div>
+
+    
+
+
+    
+    
+</body>
+<script src="script.js"></script>
+</html>

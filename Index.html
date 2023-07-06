@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font for the titles--> <!--Font for the content-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cardo:wght@400;700&family=Sigmar&display=swap" rel="stylesheet">
+  
+   <title>Colombian Food Recipes</title>
+
+   <!--Font Awesome Link-->
+
+<script src="https://kit.fontawesome.com/c9318579c4.js" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+   
+
+   <!--First page-->
+
+  <!--Banner main page-->
+
+    <div class="header">
+              
+       <!--<img class="banner" src="C:\Users\catab\OneDrive\Desktop\finalfinal.jpg">-->
+       <img class="banner" src=".\Images\BannerMainPage.jpg">
+       <div class="text-overlay-banner">
+           <h1 id="mainTitle">Coconut</h1>
+           <p>Colombian Food Recipes</p>
+       </div> 
+
+       <!-- <nav id="navBar">
+         Navigation menu items
+         <ul>
+         <li><button id="buttonNavBar"><a href="#recipes">Recipes</a></button></li>
+         <li><button id="buttonNavBar"><a href="#find us">Find Us</a></button></li>
+         <li><button id="buttonNavBar" onclick="showCart()">Cart list<span id="cart-counter">()</span></button></li> 
+        
+         
+         <li><button onclick="hideCart()">Close</button></li>
+         </ul>
+      </nav> -->
+
+      <nav id="navBar">
+         <!--Navigation menu items-->
+         <ul>
+            <div class="dropdown">
+               <button onclick="myFunction()" class="dropbtn" id="buttonNavBar">Recipes</button>
+               <div id="myDropdown" class="dropdown-content">
+                  <!-- <a href="#recipes">All the recipes</a> -->
+                  <a href="#breakfastRecipes">Breakfast</a>
+                  <a href="#lunchRecipes">Lunch</a>
+                  <!-- <a href="#snacks">Typical Snacks</a> -->
+               </div>
+             </div>
+         <li><button class="buttonNavBar"><a href="#find us">Find Us</a></button></li>
+         <li><button class="buttonNavBar" onclick="showCart()">Cart list<span id="cart-counter">()</span></button></li> 
+          
+         <!--<li><button onclick="hideCart()">Close</button></li>-->
+         </ul>
+      </nav>
+
+   </div>
+
+
+   <!--Steps of how the web page works-->
+
+   
+
+   <div class="step-container">
+       
+       <h1 class="stepsHeader">Follow these steps <i class="fa-solid fa-circle-arrow-right" style="color: #c8411b;"></i></h1>
+       
+       <!--<p>In this web page you will find Colombian Food Recipes specially for you. To make ease your creativity, you can add each recipe to the shopping list and you will get a full shopping list to </p>-->
+       
+    <div class="step">
+             <div class="circle">1</div>
+             <div class="step-content">
+               <p>Explore the diferent recipes <i class="fa-solid fa-bowl-food" style="color: #c8411b;"></i> and choose which ones are your favorites</p>
+             </div>
+             </div>
+
+   <div class="step">
+             <div class="circle">2</div>
+             <div class="step-content">
+               <p>Click on the buttom <span id="button">Add me</span> and make a list of the recipes that you want to do for your love ones <i class="fa-solid fa-heart" style="color: #c8411b;"></i></p>
+             </div>
+           </div> 
+
+   <div class="step">
+             <div class="circle">3</div>
+             <div class="step-content">
+               <p>Go to the shopping list <i class="fa-solid fa-rectangle-list" style="color: #c8411b;"></i> and download the list to prepare your recipes, and have fun! <i class="fa-solid fa-utensils" style="color: #c8411c;"></i></p>
+             </div>
+           </div>
+   </div>
+   
+</div>
+
+<!--Second page - recipes-->
+
+<div class="recipesTitle">
+
+<h1 id="recipes">RECIPES</h1>
+
+</div>
+
+                                                   <!--Breakfast Recipes-->
+
+<h2 class="classificationRecipes" id="breakfastRecipes"><a href="index_breakfast.html#mainTitleBreakfast" target="_blank">Breakfast</a></h2>
+
+<div class="breakfastRecipes" >
+
+<!--First Recipe Arepas-->
+
+<div class="recipe">
+   <img src="./Images/240_F_135204361_qPDRfr9ZUNYZAhe9qwbYc4DLW6AHqIzX.jpg">
+   
+   <div class="text-overlay">
+   <p class="typeOfDish">Breakfast</p>
+   <p class="typeOfFood" ><a href="index_breakfast.html#arepas" target="_blank">Arepas</a></p>
+   <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  30 min <button type="submit" onclick="addToShoppingList(1)" class="button-recipe">Add me</button></p> 
+   <!--Make the button to look clickable-->
+</div>
+</div>
+
+<!--Second Recipe-->
+
+<div class="recipe">
+   <img  src=".\Images\240_F_133030349_ysefpyLskXZrRAGRsXU4OnGwMIRvrpkg.jpg">
+   
+      <div class="text-overlay">
+      <p class="typeOfDish">Breakfast</p>   
+      <p class="typeOfFood"><a href="index_breakfast.html#pandebonos" target="_blank">Pandebonos</a></p>
+          <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  25 min  <button onclick="addToShoppingList(2)" class="button-recipe">Add me</button></p>
+      </div>
+   </div>
+
+   <!--Third Recipe-HUEVOS PERICOS-->
+
+<div class="recipe">
+<img src=".\Images\huevosPericos - 2.jpg">
+   
+   <div class="text-overlay">
+   <p class="typeOfDish">Breakfast</p>
+   <p class="typeOfFood"><a href="index_breakfast.html#scrambleEggs" target="_blank">Scrambled Eggs</a></p>
+   <p ><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  15 min  <button onclick="addToShoppingList(3)" class="button-recipe">Add me</button></p>
+   </div>
+</div>
+
+</div>
+
+                                                       <!--Lunch Recipes-->
+
+<h2 class="classificationRecipes" id="lunchRecipes"><a href="index_lunch.html#mainTitleLunch" target="_blank">Lunch</a></h2>
+
+<div class="lunchRecipes">
+
+<!--First Recipe-->
+
+<div class="recipe">
+   <img src=".\Images\240_F_244872713_o6NxGHL6Cx4PLkCJEBF9bTEasDZdpATT.jpg">
+   
+<div class="text-overlay">
+   <p class="typeOfDish">Lunch</p>
+   <p class="typeOfFood"><a href="index_lunch.html#redBeans" target="_blank">Red Beans</a></p>
+   <p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  60 min <button onclick="addToShoppingList(4)" class="button-recipe">Add me</button></p>
+</div>
+
+</div>
+
+<!--Second Recipe-->
+
+<div class="recipe">
+<img src=".\Images\240_F_119497691_CnjXcBeOnfHMKLneKyH789BgkjqdMNgP.jpg">
+
+<div class="text-overlay">
+<p class="typeOfDish">Lunch</p>
+<p class="typeOfFood"><a href="index_lunch.html#henSoup" target="_blank">chicken Soup</a></p>
+<p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  60 min  <button onclick="addToShoppingList(5)" class="button-recipe">Add me</button></p>
+</div>
+</div>
+
+<!--Third Recipe-->
+
+<div class="recipe">
+<img src=".\Images\240_F_546265495_r8FNEoHUx3TN8JuK5tON9tK4ILtesGzG.jpg">
+
+<div class="text-overlay">
+<p class="typeOfDish">Lunch</p>
+<p class="typeOfFood"><a href="index_lunch.html#shrimpCeviche" target="_blank">Shrimp Ceviche</a></p>
+<p><i class="fa-solid fa-stopwatch" style="color: #2da7a9;"></i>  45 min  <button onclick="addToShoppingList(6)" class="button-recipe">Add me</button></p>
+</div>
+</div>
+
+</div>
+
+<!--List of ingredients - no show-->                                           
+
+<ul id="ingredientListArepas" class="noShow"></ul>
+<ul id="ingredientListPandebonos" class="noShow"></ul>
+<ul id="ingredientListScrambleEggs" class="noShow"></ul>
+<ul id="ingredientListRedBeans" class="noShow"></ul>
+<ul id="ingredientListHenSoup" class="noShow"></ul>
+<ul id="ingredientListColombianShrimpCeviche" class="noShow"></ul>
+
+
+</div>
+
+<div id="my-cart">
+   <button class="buttonMyCart" onclick="hideCart()">Close</button>
+   <button class="buttonMyCart" onclick="cleanCartList()">Clean list</button>
+   <!-- <button class="buttonMyCart" onclick="downloadShoppingList()">Download</button> -->
+   <div id="shoppingList" class="shoppingList">List of ingredients:</div>
+</div>
+
+
+  
+</body>
+<script src="script.js"></script>
+</html>
